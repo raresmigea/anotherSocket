@@ -7,7 +7,19 @@
     <link href="/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hola amigos!</h1>
+    <!-- the whole thing is contained here -->
+    <div id="my-chat">
+      <!-- the window where everything is displayed -->
+      <div id="chat-window">
+        <!-- where the data gets displayed -->
+        <div id="output">
+        </div>
+      </div>
+      <!-- one for the handle, one for the message: -->
+      <input id="handle" type="text" placeholder="Handle">
+      <input id="message" type="text" placeholder="Message">
+      <button id="send">Send</button>
+    </div>
     <script src="/chat.js"></script>
   </body>
 </html>
