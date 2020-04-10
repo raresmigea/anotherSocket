@@ -18,4 +18,9 @@ var io = socket(server);
 //the callback has an argument - socket - each client will have its own socket
 io.on('connection', function(socket) {
   console.log('made socket connection', socket.id); //the socket.is different for each refresh
+
+  //listen for the message from the client
+  socket.on('chat', function(data) { // data- received from the client
+    io.sockets.emit('chat', data); //we send it out to all the clients connected
+  })
 });
