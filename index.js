@@ -17,5 +17,5 @@ var io = socket(server);
 //listen for connection, when connection is made to the server - the callback function fires
 //the callback has an argument - socket - each client will have its own socket
 io.on('connection', function(socket) {
-  console.log('made socket connection');
+  console.log('made socket connection', socket.id); //the socket.is different for each refresh
 });
