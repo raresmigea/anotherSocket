@@ -22,5 +22,10 @@ io.on('connection', function(socket) {
   //listen for the message from the client
   socket.on('chat', function(data) { // data- received from the client
     io.sockets.emit('chat', data); //we send it out to all the clients connected
+  });
+
+  //listening for typing even
+  socket.on('typing', function(data) {
+    socket.broadcast.emit('typing', data); // broadcast - send to all but the listener
   })
 });
