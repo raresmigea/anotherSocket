@@ -1,0 +1,28 @@
+{
+  "name": "anothersocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raresmigea/anotherSocket.git"
+  },
+  "author": "raresmigea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raresmigea/anotherSocket/issues"
+  },
+  "homepage": "https://github.com/raresmigea/anotherSocket#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  }
+}
