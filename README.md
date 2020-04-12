@@ -16,8 +16,6 @@
 
 ### 🏠 [Homepage](https://github.com/raresmigea/anotherSocket#readme)
 
-### ✨ [Demo](localhost:4000)
-
 ## Install
 
 ```sh
@@ -41,6 +39,7 @@ nodemon start
 👤 **raresmigea**
 
 * Github: [@raresmigea](https://github.com/raresmigea)
+* LinkedIn: [@rares992](https://linkedin.com/in/rares992)
 
 ## 🤝 Contributing
 
