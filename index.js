@@ -1,11 +1,10 @@
 const express = require('express');
 const socket = require('socket.io');
 
-
 //App setup
 const app = express();
 const server = app.listen(4000, () => {
-  console.log('listening on port 4000')
+  console.log('listening on port 4000');
 });
 
 //static files
@@ -20,7 +19,8 @@ io.on('connection', (socket) => {
   console.log('made socket connection', socket.id); //the socket.is different for each refresh
 
   //listen for the message from the client
-  socket.on('chat', (data) => { // data- received from the client
+  socket.on('chat', (data) => {
+    // data- received from the client
     io.sockets.emit('chat', data); //we send it out to all the clients connected
   });
 
