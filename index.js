@@ -1,5 +1,5 @@
-const express = require('express');
-const socket = require('socket.io');
+import express, { static } from 'express';
+import socket from 'socket.io';
 
 //App setup
 const app = express();
@@ -8,7 +8,7 @@ const server = app.listen(4000, () => {
 });
 
 //static files
-app.use(express.static('public'));
+app.use(static('public'));
 
 //socket setup
 var io = socket(server);
