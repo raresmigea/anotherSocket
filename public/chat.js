@@ -11,9 +11,10 @@ const feedback = document.getElementById('feedback');
 
 //emit events when the button is clicked
 btn.addEventListener('click', () => {
-  socket.emit('chat', {// will emit a message down the socket to the server
+  socket.emit('chat', {
+    // will emit a message down the socket to the server
     message: message.value, //the actual object that is sent
-    name: name.value
+    name: name.value,
   });
 });
 
@@ -23,13 +24,15 @@ message.addEventListener('keypress', () => {
 //listen for events from the server
 
 socket.on('chat', (data) => {
-  feedback.innerHTML = "";
-  output.innerHTML += '<p><strong>' + data.name + ': </strong>' + data.message + '</p>'; //output the data to the DOM
+  feedback.innerHTML = '';
+  output.innerHTML +=
+    '<p><strong>' + data.name + ': </strong>' + data.message + '</p>'; //output the data to the DOM
 });
 
 socket.on('typing', (data) => {
   feedback.innerHTML = '<p><em>' + data + 'is typing a message.. </em></p>';
 });
+
 /*
 When we click send -> chat.js/btn.addEventListener - is listening for that click
 - grab the socket and emit a chat meesage - send it to the server
