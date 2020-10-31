@@ -1,5 +1,5 @@
-//make connection
-//this is the socket for the FE
+// make connection
+// this is the socket for the FE
 const socket = io.connect('http://localhost:4000');
 
 //starting querying the DOM and store some variables from html page
@@ -9,7 +9,7 @@ const btn = document.getElementById('send');
 const output = document.getElementById('output');
 const feedback = document.getElementById('feedback');
 
-//emit events when the button is clicked
+// emit events when the button is clicked
 btn.addEventListener('click', () => {
   socket.emit('chat', {
     // will emit a message down the socket to the server
@@ -21,7 +21,7 @@ btn.addEventListener('click', () => {
 message.addEventListener('keypress', () => {
   socket.emit('typing', name.value);
 });
-//listen for events from the server
+// listen for events from the server
 
 socket.on('chat', (data) => {
   feedback.innerHTML = '';
