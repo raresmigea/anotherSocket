@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Sockets</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
-    <link href="/style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- the whole thing is contained here -->
     <div id="my-chat">
-      <!-- the window where everything is displayed -->
       <div id="chat-window">
-        <!-- where the data gets displayed -->
         <div id="output"></div>
         <div id="feedback"></div>
       </div>
-      <!-- one for the name, one for the message: -->
-      <input id="name" type="text" placeholder="Name">
-      <input id="message" type="text" placeholder="Message">
+      <input id="name" type="text" placeholder="Name" />
+      <input id="message" type="text" placeholder="Message" />
       <button id="send">Send</button>
     </div>
     <script src="/chat.js"></script>
