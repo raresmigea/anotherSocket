@@ -2,7 +2,7 @@
 // this is the socket for the FE
 const socket = io.connect('http://localhost:4000');
 
-//starting querying the DOM and store some variables from html page
+// starting querying the DOM and store some variables from html page
 const messsage = document.getElementById('messsage');
 const name = document.getElementById('name');
 const btn = document.getElementById('send');
