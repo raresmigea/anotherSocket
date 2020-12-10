@@ -19,7 +19,7 @@ btn.addEventListener('click', () => {
 });
 
 message.addEventListener('keypress', () => {
-  socket.emit('typing...', name.value);
+  socket.emit('typing', name.value);
 });
 // listen for events from the server
 
