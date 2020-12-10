@@ -1,5 +1,5 @@
 // make connection
-// this is the socket for the FE
+// this is the socket for front end
 const socket = io.connect('http://localhost:4000');
 
 // starting querying the DOM and store some variables from html page
