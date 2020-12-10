@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
   });
 
   // listening for typing even
-  socket.on('typing...', (data) => {
-    socket.broadcast.emit('typing...', data); // broadcast - send to all but the sender
+  socket.on('typing', (data) => {
+    socket.broadcast.emit('typing', data); // broadcast - send to all but the sender
   });
 });
