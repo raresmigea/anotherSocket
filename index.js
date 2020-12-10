@@ -21,7 +21,7 @@ io.on('connection', (socket) => {
   // listen for the message from the client
   socket.on('chat', (data) => {
     // data - received from the client
-    io.sockets.emit('chat', data); //we send it out to all the clients connected
+    io.sockets.emit('chat', data); // we send it out to all the clients connected
   });
 
   // listening for typing even
