@@ -38,7 +38,7 @@ When we click send -> chat.js/btn.addEventListener - it's listening for that cli
 - grab the socket and emit a chat meesage - send it to the server
 - server (index.js/io.on - socket.on) - listens to all its sockets - when hear something
 - fires the callback fuction
-- io.sockets.emit() - grab all the sockets and emit that chat message and send it
+- io.sockets.emit() - grab all the sockets and emit that chat message then send it
 - then in FE: put it on the chat window:
 - client (chat.js/socket.on) socket.on - output.innerHTML - on the page
 */
